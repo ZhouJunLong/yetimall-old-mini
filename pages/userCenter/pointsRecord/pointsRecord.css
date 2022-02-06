@@ -1,0 +1,89 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+	padding-bottom: 30rpx;
+}
+/* 总积分 */
+.wrap .total-area{
+	width: 100%;
+	width:100%;
+	height:280rpx;
+	background:linear-gradient(to right, #4753e8, #4986ee);
+	position: relative;
+}
+.total-area .total-info{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 2;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.total-info .total-desc{
+	color:#ffffff;
+	padding-bottom:10rpx;
+	font-size:26rpx;
+	padding-left: 25rpx;
+}
+.total-info .total-fee{
+	color:#fff;
+	font-weight:600;
+	font-size:60rpx;
+	padding-left: 25rpx;
+}
+/* 类型 */
+.wrap .tab-area{
+	width:100%;
+	background:#fff;
+	display:flex;
+	justify-content:space-around;
+	border-bottom:1rpx solid #F6F6F6;
+}
+.tab-area .tab-list{
+	padding:30rpx 0px;
+	font-size:26rpx;
+}
+.tab-area .tab-list.cur{
+	color:#4875ec;
+}
+/* 积分记录 */
+.wrap .main-area{
+	width:100%;
+}
+.main-area .record-list{
+	background:#fff;
+	padding:25rpx 25rpx;
+	border-bottom:1rpx solid #F6F6F6;
+}
+.record-list .record-top{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.record-top .record-type{
+	font-size:27rpx;
+}
+.record-top .record-money{
+	font-size:28rpx;
+	color:#F72F50;
+}
+.record-top .record-money-two{
+	font-size:28rpx;
+}
+.record-list .time{
+	font-size:24rpx;
+	color:#999;
+	padding-top:10rpx;
+}

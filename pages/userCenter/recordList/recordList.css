@@ -1,0 +1,93 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+}
+/* 内容区域 */
+.wrap .order-area{
+	width:100%;
+}
+/* 订单 */
+.order-area .order-list{
+	background:#fff;
+	margin-bottom:20rpx;
+	padding:0px 30rpx;
+}
+.order-list .order-top{
+	padding:30rpx 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:25rpx;
+}
+.order-top .order-num{
+	color:#666666;
+	font-size:26rpx;
+	display:flex;
+	align-items:center;
+}
+.order-num .iconfont{
+	font-size:26rpx;
+	padding-right:10rpx;
+}
+.order-top .state{
+	color:#5478dd;
+}
+.order-top .state2{
+	color:#999;
+}
+.order-list .order-mid{
+	padding:20rpx;
+	background:#F7F9FB;
+	border-radius:6rpx;
+	font-size:24rpx;
+	color:#808080;
+}
+.order-list .order-mid .order-desc{
+	color:#333333;
+}
+.order-mid .count{
+	padding:10rpx 0px;
+}
+.order-list .order-bot{
+	width:100%;
+	padding:25rpx 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.order-bot .btn-area{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.btn-area .btn-list{
+	width:150rpx;
+	height:55rpx;
+	border-radius:40rpx;
+	background: linear-gradient(to right, #4987ee 0%,#4753e8 100%);
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+}
+.btn-area .btn-list-two{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	background: linear-gradient(to right, #4987ee 0%,#4753e8 100%);
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:20rpx;
+	color:#fff;
+}

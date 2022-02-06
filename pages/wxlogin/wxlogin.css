@@ -1,0 +1,36 @@
+.wrap {
+	width: 100%;
+	padding: 100rpx 0rpx;
+}
+.login-image{
+	text-align: center;
+}
+.login-image image{
+  width: 200rpx;
+  margin: auto;
+}
+.login-info{
+  padding-top: 30rpx;
+  text-align: center;
+}
+.login-title{
+  font-size: 34rpx;
+  padding: 30rpx 0rpx;
+}
+.login-tip{
+  padding: 0rpx 0rpx;
+  color: #999999;
+  font-size: 30rpx;
+}
+.login-btn{
+	width:100%;
+	margin-top: 50rpx;
+}
+.login-btn button{
+  margin:0rpx 50rpx;
+  background: #02BB00;
+  color: #FFFFFF;
+  line-height: 2.5;
+  font-size: 34rpx;
+  border-radius: 8rpx;
+}

@@ -1,0 +1,205 @@
+page{
+	background: #F5F6F7;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #F5F6F7;
+	height: calc(100vh - 94px) ;
+}
+/* 头部区域 */
+.wrap .top-area{
+	width:100%;
+	height:530rpx;
+	position:relative;
+	background-color: rgba(87, 208, 217, 100);
+}
+.top-area .top-info{
+	position:absolute;
+	left:5%;
+	top:0px;
+	width:90%;
+	height:60%;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items:center;
+}
+.top-area .no-user{
+	position:absolute;
+	left:0px;
+	top:20%;
+	padding:0px 30rpx;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.top-info .user-info{
+	display:flex;
+	align-items:center;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 10%;
+}
+.user-info .head_img{
+	display:block;
+	width:120rpx;
+	height:120rpx;
+	border-radius:50%;
+}
+.user-info .user{
+	margin-top: 10rpx;
+	width: 100%;
+	display: flex;
+}
+.user .nick_name{
+	font-size:36rpx;
+	color:#fff;
+	width: 60%;
+	margin-left: 20%;
+	font-weight: bold;
+	text-align: center;
+}
+.user .submit-info{
+	width: 20%;
+	text-align: center;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 10rpx;
+}
+.user .id_num{
+	font-size:25rpx;
+	color:#fff;
+}
+.top-info .peron-info,.no-user .peron-info{
+	width:170rpx;
+	height:55rpx;
+	background:#FFFFFF;
+	border-radius:10rpx;
+	text-align:center;
+	line-height:55rpx;
+	color:rgba(87, 208, 217, 100);;
+	font-size:26rpx;
+}
+.top-info .top-bot{
+	width:100%;
+	padding-top:40rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.top-bot .top-bot-list{
+	color:#fff;
+	font-size:25rpx;
+}
+.top-bot-list .bot-val{
+	padding-top:10rpx;
+	font-size:35rpx;
+}
+/* 主体 */
+.wrap .main-area{
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top: 325rpx;
+	padding-bottom: 20rpx;
+	background-color: transparent;
+}
+.order{
+	width: calc(100% - 60rpx);
+	border-radius: 12px;
+	background-color: #FFFFFF;
+	padding: 20rpx 30rpx 30rpx 30rpx;
+}
+.order-title{
+	display: flex;
+	justify-content: space-between;
+}
+.order-options{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80rpx;
+}
+.order-options .order-option-item{
+	width: 18%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.order-options .order-option-item image{
+	width: 68rpx;
+	height: 68rpx;
+	align-self: center;
+	margin-bottom: 22rpx;
+}
+.order-options .order-option-item text{
+	color: rgba(76, 81, 84, 100);
+	font-size: 28rpx;	
+}
+.order-inner-title{
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+	font-weight: bold;
+}
+.order-list{
+	color: rgba(126, 136, 140, 100);
+	font-size: 28rpx;
+}
+.options{
+	margin-top: 40px;
+	border-radius: 12px;
+	background-color: #FFFFFF;
+	padding: 12rpx 40rpx;
+}
+.like{
+	display: flex;
+	justify-content: space-between;
+	padding: 30rpx 0;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+	border-bottom: 1px solid #EEEEEE;
+}
+.like .left .iconfont{
+	color: #0DBC80;
+	font-size: 36rpx;
+	margin-right: 10px;
+}
+.address{
+	display: flex;
+	justify-content: space-between;
+	padding: 30rpx 0;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+	border-bottom: 1px solid #EEEEEE;
+}
+.online-kefu{
+	display: flex;
+	justify-content: space-between;
+	padding: 30rpx 0;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+}
+.address .left .iconfont{
+	color: #EF7586;
+	font-size: 36rpx;
+	margin-right: 10px;
+}
+.online-kefu .left .iconfont{
+	color: #57D0D9;
+	font-size: 36rpx;
+	margin-right: 10px;
+}
+.kefu{
+	color: rgba(126, 136, 140, 100);
+	font-size: 24rpx;
+	text-align: center;
+	margin-top: 76rpx;
+}
+.kefu .phone{
+	color: #57D0D9;
+}
+

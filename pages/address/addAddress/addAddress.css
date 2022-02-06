@@ -1,0 +1,136 @@
+page{
+	background: #FFFFFF;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #FFFFFF;
+	padding-bottom: 100rpx;
+}
+/* 添加信息 */
+.input-area {
+	background: #FFF;
+	padding: 0px 30rpx;
+}
+.attr-area {
+	height: 120rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 2rpx solid #BBBBBB;
+}
+/* .attr-area:last-child {
+	border: none;
+} */
+.alert-tip{
+	width: 94%;
+	margin: 0 auto;
+	margin-top: 40rpx;
+}
+.tip{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.attr-name{
+	width:180rpx;
+	display:block;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+}
+.input {
+	display: flex;
+	align-items:center;
+	width:calc(100% - 150rpx);
+	margin-left: 10rpx;
+}
+.input::-webkit-input-placeholder{
+	color: #DAE0E3;
+}
+.label-area{
+	width:calc(100% - 150rpx);
+	margin-left: 10rpx;	
+	overflow:scroll;
+	height:90rpx;
+	white-space:nowrap;
+	padding:15rpx 0px;
+}
+.label-area .label-list{
+	display:inline-block;
+	padding:8rpx 15rpx;
+	border:1rpx solid #bbb;
+	margin-left:20rpx;
+	border-radius:30rpx;
+}
+.label-area .label-list:first-child{
+	margin:0px;
+}
+.label-area .label-list.cur{
+	color:#0079FF;
+	border:1rpx solid #0079FF;
+}
+.icon-dingweiweizhi{
+	color:#4862e9;
+	font-size:36rpx;
+}
+/* 选择城市 */
+/* .picker-area{
+	border-bottom: 2rpx solid #BBBBBB;
+} */
+.select-area{
+	/* color: #DAE0E3; */
+	font-size: 32rpx;
+}
+.picker-area .picker{
+	padding: 27rpx 10rpx;
+	position: relative;
+}
+.picker-area .picker .city-info-no{
+	color: #999999;
+}
+.picker-area .picker .iconfont{
+	position: absolute;
+	right: -35rpx;
+	top: 31%;
+	z-index: 2;
+	font-size: 18px;
+	color: #999999;
+}
+/* 地图定位 */
+.address-name{
+	width: 100%;
+	align-self: center;
+}
+/* 详细地址 */
+.room-area{
+	height: 45px;
+	border-bottom: 1px solid #EEE;
+}
+.room-area .room-area-input{
+	width: 80rpx;
+	text-align: center;
+	font-size: 26rpx;
+	margin-right: 5rpx;
+	border-bottom: 1rpx solid #999999;
+}
+.room-area .room-area-after{
+	margin-right: 30rpx;
+}
+.area-area{
+	border-bottom: none;
+}
+.submit-area {
+	display: flex;
+	border-radius: 16rpx;
+	background-color: rgba(87, 208, 217, 100);
+	padding: 20rpx 0rpx;
+	justify-content: center;
+	margin: 0rpx 80rpx;
+	margin-top: 180rpx;
+	color: #FFF;
+	font-size: 32rpx;
+}

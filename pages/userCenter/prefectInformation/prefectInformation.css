@@ -1,0 +1,68 @@
+.warp{
+	width: 100%;
+	height: 100vh;
+}
+.phone{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20%;
+}
+.phone .title{
+	margin-top: 20%;
+	z-index: 1;
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 600;
+}
+.phone .phone_input{
+	background: #fff;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 30px 0px;
+}
+.phone .submit{
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 17px;
+	font-weight: 600;
+	background: #FF7100;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 8px;
+	text-align: center;
+}     
+.back-img{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.title{
+	margin-top: 20%;
+	z-index: 1;
+}
+.code{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0px;
+}
+.code .input-code{
+	background-color: #FFFFFF;
+	padding: 12rpx 15rpx;
+	border-radius: 16rpx;
+	margin-top: 15rpx;
+	width:calc(46% - 30rpx);
+}
+.code .getcode{
+	width:calc(46% - 3r0px);
+	margin-top: 15rpx;
+	text-align: center;
+	padding: 12rpx 15rpx;
+	border-radius: 16rpx;
+	background-color: #FFFFFF;
+	border: 1px solid #EE7811;
+}

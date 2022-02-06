@@ -1,0 +1,190 @@
+/* pages/client/fen/income/income.wxss */
+page{
+	background: #f7f7f7;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f7f7f7;
+	padding-bottom: 30rpx;
+}
+/* 主内容 */
+.wrap .main-area{
+	padding:25rpx;
+	box-sizing:border-box;
+}
+.main-area .main-list{
+	width:100%;
+	background:#fff;
+	border-radius:8rpx;
+}
+.main-list .head-area{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	font-size:25rpx;
+	align-items:center;
+	color:#666666;
+	padding:25rpx 18rpx;
+	box-sizing:border-box;
+	border-bottom:1rpx solid #e6e6e6;
+}
+.head-area .iconfont{
+	font-size:26rpx;
+	color:#666666;
+}
+.main-list .cont-area{
+	display:flex;
+	justify-content:space-between;
+	padding:25rpx 18rpx;
+	box-sizing:border-box;
+}
+.cont-area .user-info{
+	display:flex;
+}
+.user-info .head-img{
+	display:block;
+	width:90rpx;
+	height:90rpx;
+	border-radius:50%;
+}
+.user-info .user-list{
+	padding-left:25rpx;
+}
+.user-list .name{
+	padding-bottom:20rpx;
+	color:#1a1a1a;
+}
+.user-list .time{
+	font-size:26rpx;
+	color:#666666;
+}
+.cont-area .money{
+	color:#ff4e48;
+	font-size:32rpx;
+}
+/* 没有更多了 */
+.wrap .no-more{
+	width:100%;
+	padding:25rpx;
+	font-size:28rpx;
+	color:#ccc;
+	text-align:center;
+}
+
+/*收入详情*/
+.wrap .modal-area{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.modal-area .modal-cont{
+	width:100%;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#fff;
+	border-top-left-radius:20rpx;
+	border-top-right-radius:20rpx;
+	padding:0px 25rpx;
+	box-sizing:border-box;
+}
+.modal-cont .modal-head{
+	position:relative;
+	width:100%;
+	height:100rpx;
+}
+.modal-head .title{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 2;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.modal-head .icon-guanbi1{
+	position:absolute;
+	top:34%;
+	right:0px;
+	color:#686868;
+	font-size:26rpx;
+}
+.modal-cont .modal-mid{
+	width:100%;
+	border-bottom:1rpx solid #F4F4F4;
+	padding:25rpx 0rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.modal-mid .modal-user{
+	display:flex;
+	align-items:center;
+	font-size:28rpx;
+}
+.modal-user .desc-name{
+	color:#808080;
+	padding-right:0rpx;
+}
+.modal-user .name{
+	color:#1a1a1a;
+}
+.modal-mid .modal-fee{
+	display:flex;
+	align-items:flex-end;
+}
+.modal-fee .icon-qian{
+	color:#ff4e48;
+	font-size:26rpx;
+}
+.modal-fee .fee{
+	color:#ff4e48;
+	font-size:32rpx;
+}
+.modal-cont .order-goods{
+	width:100%;
+	border-bottom:1rpx solid #e6e6e6;
+	padding:25rpx 0rpx;
+}
+.order-goods .good-list{
+	width:100%;
+}
+.good-list .good{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.good-list .good:first-child{
+	padding-bottom:40rpx;
+}
+.good .field{
+	color:#808080;
+	font-size:28rpx;
+}
+.good .value{
+	font-size:28rpx;
+}
+.modal-cont .bottom-area{
+	width:100%;
+	padding:25rpx 0rpx;
+}
+.bottom-area .info-list{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:28rpx;
+	padding-bottom:25rpx;
+}
+.info-list > view:first-child{
+	color:#808080
+}

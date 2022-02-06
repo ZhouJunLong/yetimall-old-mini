@@ -1,0 +1,103 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+	padding-bottom: 30rpx;
+}
+/* 请假记录 */
+.wrap .leave-area{
+	padding:20rpx 30rpx;
+}
+.leave-area .leave-list{
+	width:100%;
+	margin-bottom:20rpx;
+	background:#fff;
+	border-radius:15rpx;
+}
+.leave-list .leave-top{
+	padding:25rpx 25rpx;
+	border-bottom:1rpx solid #F3F6F9;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.leave-top .time-area{
+	display:flex;
+	align-items:center;
+}
+.time-area .iconfont{
+	font-size:28rpx;
+	margin-right:10rpx;
+}
+.time-area .iconfont.type-one{
+	color:#4779EA;
+}
+.time-area .iconfont.type-two{
+	color:#F8B530;
+}
+.time-area .type-text{
+	margin-right:15rpx;
+}
+.leave-top .state-one{
+	color:#999;
+}
+.leave-top .state-two{
+	color:#5478DD;
+}
+.leave-top .state-thd{
+	color:#F54163;
+}
+.leave-list .leave-mid{
+	width:100%;
+	padding:25rpx;
+}
+.leave-mid .date-area{
+	width:100%;
+	padding-bottom:10rpx;
+	display:flex;
+	align-items:center;
+}
+.date-area .date-desc{
+	width:135rpx;
+	font-weight:bold;
+}
+.date-area .date-one{
+	font-weight:bold;
+}
+.date-area .date-desc-two{
+	width:165rpx;
+	margin-left:20rpx;
+}
+.leave-mid .content-area{
+	width:100%;
+	display:flex;
+}
+.content-area .content-desc{
+	width:135rpx;
+	color:#999;
+}
+.content-area .content{
+	width:calc(100% - 125rpx);
+	color:#999;
+}
+.leave-list .leave-bot{
+	width:100%;
+	padding:25rpx;
+	border-top:1rpx solid #F3F6F9;
+	display:flex;
+}
+.leave-bot .reason-desc{
+	width:75rpx;
+	color:#999;
+}
+.leave-bot .reason{
+	width:calc(100% - 65rpx);
+	color:#999;
+}

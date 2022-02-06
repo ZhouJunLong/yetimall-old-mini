@@ -1,0 +1,157 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+	padding-bottom: calc(150rpx + (constant(safe-area-inset-bottom) / 1)); /* tabBar底部安全距离, 兼容 iOS<11.2*/
+	padding-bottom: calc(150rpx + (env(safe-area-inset-bottom) / 1)); /* 兼容 iOS>=11.2 */
+}
+/* 顶部区域 */
+.wrap .top-area{
+	width:100%;
+	position:relative;
+}
+.top-area .top-img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+.top-area .top-info{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.top-info .head_img{
+	display:block;
+	width:100rpx;
+	height:100rpx;
+	border-radius:50%;
+	border:5rpx solid #C8D3F9;
+	margin-top:60rpx;
+}
+.top-info .nick_name{
+	font-size:30rpx;
+	color:#fff;
+	padding-top:25rpx;
+}
+.user .id_num{
+	font-size:25rpx;
+	color:#fff;
+}
+.top-info .peron-info,.no-user .peron-info{
+	width:170rpx;
+	height:55rpx;
+	background:#DDEBFC;
+	border-radius:30rpx;
+	text-align:center;
+	line-height:55rpx;
+	color:#0079FF;
+	font-size:26rpx;
+}
+.top-info .top-bot{
+	width:100%;
+	padding-top:40rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.top-bot .top-bot-list{
+	color:#fff;
+	font-size:25rpx;
+}
+.top-bot-list .bot-val{
+	padding-top:10rpx;
+	font-size:35rpx;
+}
+.top-info .count-area{
+	width:100%;
+	margin-top:20rpx;
+	display:flex;
+	align-items:center;
+}
+.count-area .count-list{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100rpx;
+	position:relative;
+}
+.count-list .count-num{
+	font-size:40rpx;
+	color:#fff;
+	padding-bottom:5rpx;
+}
+.count-list .count-tip{
+	font-size:26rpx;
+	color:#fff;
+}
+.count-area .count-list .bor{
+	position:absolute;
+	right:0px;
+	top:15rpx;
+	width:1rpx;
+	height:70rpx;
+	background:#6D8AEF;
+}
+/* 菜单 */
+.menu-area{
+	background:#ffffff;
+	padding: 0rpx 30rpx;
+}
+.menu-area .menu-list{
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30rpx 0rpx;
+	border-bottom: 1rpx solid #EEEEEE;
+}
+.menu-area .menu-list:last-child{
+	border-bottom: 1rpx solid #FFFFFF;
+}
+.menu-list .iconfont{
+	color:#D0d4d9;
+	font-size:26rpx;
+}
+
+/* tabbar */
+.uni-tabbar{
+	width: 100%;
+	height: 100rpx;
+	background: #FFFFFF;
+	padding: 15rpx 0rpx;
+	border-top: 1rpx solid #EEEEEE;
+	padding-bottom: calc(50rpx + (constant(safe-area-inset-bottom) / 1)); /* tabBar底部安全距离, 兼容 iOS<11.2*/
+	padding-bottom: calc(50rpx + (env(safe-area-inset-bottom) / 1)); /* 兼容 iOS>=11.2 */
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index: 10;
+}
+.uni-tabbar .uni-tabbar-item{
+	text-align: center;
+	color: #263d5a;
+	font-size: 24rpx;
+}
+.uni-tabbar .uni-tabbar-item image{
+	width: 38rpx;
+	height: 44rpx;
+	margin-bottom: 5rpx;
+}
+.uni-tabbar .uni-tabbar-center image{
+	width: 42rpx;
+	height: 44rpx;
+}

@@ -1,0 +1,17 @@
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #ffffff;
+}
+/* 内容详情 */
+.wrap .content{
+    background: #fff;
+    font-size: 26rpx;
+}
+.content image {
+    border-radius: 4rpx;
+    width: 100% !important;
+    height: auto;
+    margin: 10rpx 0rpx;
+}

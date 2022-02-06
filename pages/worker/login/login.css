@@ -1,0 +1,91 @@
+page{
+	background:#fff;
+}
+.wrap{
+	font-size:28rpx;
+}
+.wrap .main-area{
+	width:100%;
+}
+.main-area .top-area{
+	width:100%;
+	position:relative;
+}
+.top-area .top-img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.top-area .top-info{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.top-info .title-one{
+	color:#fff;
+	font-size:40rpx;
+	font-weight:bold;
+	padding-bottom:20rpx;
+}
+.top-info .title-two{
+	color:#fff;
+	font-size:38rpx;
+}
+/* 账号密码 */
+.main-area .login-area{
+	/* padding:100rpx 60rpx 0px 60rpx; */
+}
+.login-area .input-area{
+	width:90%;
+	height:100rpx;
+	background:#F8FAFC;
+	display:flex;
+	align-items:center;
+	padding:0px 30rpx;
+	margin: 0 auto 40rpx auto;
+}
+.input-area .iconfont{
+	font-size:30rpx;
+	color:#0079FF;
+}
+.input-area .inp{
+	flex:1;
+	height:55rpx;
+	padding-left:30rpx;
+	border:0px;
+	outline:none;
+}
+
+/* 提交 */
+.main-area .btn-area{
+	/* padding:140rpx 60rpx 140rpx 60rpx; */
+	width:100%;
+}
+.btn-area .submit{
+	width:80%;
+	height:80rpx;
+	background:linear-gradient(to right,#5BB5FB , #48A5F9,#2889F5,#1B7DF4);
+	border-radius:50rpx;
+	color:#fff;
+	text-align:center;
+	line-height:80rpx;
+	font-size:30rpx;
+	margin: 0 auto;
+}
+
+.main-area .copy-right{
+	position:fixed;
+	bottom:80rpx;
+	left:0px;
+	width:100%;
+	color:#999;
+	font-size:26rpx;
+	text-align:center;
+	margin-bottom:50rpx;
+}

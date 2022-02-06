@@ -1,0 +1,111 @@
+page{
+	background: #f7f8fb;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f7f8fb;
+}
+/* 内容区域 */
+.wrap .address-area{
+	padding:50rpx 30rpx;
+	background:#fff;
+	margin-bottom:10rpx;
+}
+.address-area .address-top{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-bottom:15rpx;
+}
+.address-top .name{
+	font-size:28rpx;
+}
+.address-top .phone{
+	font-size:28rpx;
+}
+.address-area .address-bot{
+	width:100%;
+	font-size:28rpx;
+	color:#999;
+}
+/* 预约时间 */
+.wrap .time-area{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30rpx;
+	background:#fff;
+	margin-bottom:10rpx;
+}
+.time-area .time-list{
+	flex:1;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	color:#999;
+	font-size:26rpx;
+}
+.time-list .iconfont{
+	font-size:30rpx;
+	margin-left:10rpx;
+}
+/* 使用次数 */
+.wrap .count-area{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30rpx;
+	background:#fff;
+	margin-bottom:10rpx;
+}
+.count-area .count{
+	color:#FB4939;
+}
+.count-area .inp{
+	flex:1;
+	height:50rpx;
+	text-align:right;
+	line-height:50rpx;
+	outline:none;
+	border:0px;
+}
+/* 备注 */
+.wrap .message-area{
+	display:flex;
+	align-items:center;
+	padding:30rpx;
+	background:#fff;
+}
+.message-area .message{
+	flex:1;
+	height:50rpx;
+	line-height:50rpx;
+	outline:none;
+	border:0px;
+	padding-left:30rpx;
+}
+/* 按钮 */
+.wrap .btn-area{
+	width: 100%;
+	position:fixed;
+	left:0px;
+	bottom:200rpx;
+	z-index: 2;
+}
+.btn-area .submit{
+	width:80%;
+	margin: auto;
+	height:80rpx;
+	background: linear-gradient(to right, #4987ee 0%,#4753e8 100%);
+	color:#fff;
+	font-size:30rpx;
+	border-radius:50rpx;
+	text-align:center;
+	line-height:80rpx;
+}

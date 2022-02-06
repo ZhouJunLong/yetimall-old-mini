@@ -1,0 +1,134 @@
+page{
+	background-color: #F5F6F8;
+}
+.wrap{
+	background-color: #F5F6F8;
+	padding-bottom: 200rpx;
+}
+.goods-list{
+	width: calc(100% - 40rpx);
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	margin-top: 40rpx;
+	border-radius: 16rpx;
+}
+.goods-item{
+	display: flex;
+	justify-content: space-between;
+	padding: 20rpx;
+	min-height: 160rpx;
+}
+.item-check{
+	width: 10%;
+	text-align: center;
+	align-self: center;
+}
+.item-left{
+	width: 30%;
+}
+.item-left image{
+	width: 100%;
+	height: 100%;
+}
+.item-right{
+	width: 60%;
+	color: rgba(76, 81, 84, 100);
+	font-size: 28rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.item-right .options{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25rpx;
+}
+.item-right .options .price{
+	color: rgba(87, 208, 217, 100);
+	font-size: 32rpx;
+}
+.item-right .options .count-option{
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	color: rgba(76, 81, 84, 100);
+	font-size: 30rpx;
+}
+.item-right .options .count-option .icon-jianshao{
+	color:rgba(218, 224, 227, 100);
+	font-size: 36rpx;
+}
+.item-right .options .count-option .icon-zengjia{
+	color: rgba(87, 208, 217, 100);
+	font-size: 36rpx;
+}
+.bottom-options{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #FFFFFF;
+}
+.check-box{
+	width: 18%;
+	text-align: left;
+	margin-left: 20rpx;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+}
+.check-box .iconfont{
+	color: #000000;
+	margin-right: 5px;
+}
+.total-count{
+	width: 15%;
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+}
+.total-count .count{
+	color: #FF0000;
+}
+.total-price{
+	width: 29%;
+}
+.total-price .order-price-unit{
+	font-size: 28rpx;
+	color: #FF0000;
+}
+.total-price .order-price{
+	font-size: 28rpx;
+	color: #FF0000;
+	font-weight: bold;
+}
+.submit{
+	width: 19%;
+	border-radius: 52rpx;
+	background-color: rgba(87, 208, 217, 100);
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 32rpx;
+	margin-top: 10rpx;
+	height: 40px;
+	margin-bottom: 10rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 1%;
+}
+.delete_select{
+	width: 19%;
+	border-radius: 52rpx;
+	text-align: center;
+	border: 1px solid #999999;
+	font-size: 32rpx;
+	margin-right: 1%;
+	margin-top: 10rpx;
+	height: 40px;
+	margin-bottom: 10rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

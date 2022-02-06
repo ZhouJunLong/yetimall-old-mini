@@ -1,0 +1,104 @@
+page{
+	background: #FFFFFF;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #FFFFFF;
+	padding-bottom: 0rpx;
+}
+/* 内容区域 */
+.wrap .top-area{
+	width:100%;
+	padding-top:100rpx;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.top-area .top-fir{
+	color: #454545;
+	font-size:40rpx;
+	font-weight:bold;
+}
+.top-area .top-snd{
+	color: #454545;
+	font-size:28rpx;
+	padding:8rpx 0px 10rpx 0px;
+	border-bottom:1rpx dashed #989898;
+}
+.top-area .score-area{
+	padding-top:40rpx;
+	display:flex;
+	align-items:center;
+}
+.score-area .score-list{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-right:10rpx;
+}
+.score-list .iconfont{
+	font-size:50rpx;
+	color:#ccc;
+}
+.score-area .score-list:last-child{
+	margin-right:0rpx;
+}
+.score-area .score-list .cur{
+	color:#FCC919;
+}
+.wrap .label-area{
+	padding:70rpx 80rpx;
+	display:flex;
+	flex-wrap:wrap;
+}
+.label-area .label-list{
+	padding:15rpx 30rpx;
+	background:#DEEBFC;
+	color:#4e89ed;
+	margin-right:50rpx;
+	margin-bottom:25rpx;
+	border-radius:50rpx;
+}
+.label-area .label-list:last-child{
+	margin-right:0px;
+}
+.label-area .label-list.cur2{
+	background:#4e89ed;
+	color:#fff;
+}
+.wrap .message-area{
+	padding:0px 80rpx;
+}
+.message-area .message{
+	width: 90%;
+	margin: auto;
+	height:280rpx;
+	border:1rpx solid #d2d2d2;
+	border-radius:10rpx;
+	padding:25rpx;
+}
+.wrap .tip{
+	padding-top:35rpx;
+	color:#989898;
+	text-align:center;
+}
+.wrap .btn-area{
+	padding:140rpx 60rpx 0px 60rpx;
+}
+.btn-area .submit{
+	width:90%;
+	margin: auto;
+	height:80rpx;
+	background: linear-gradient(to right, #4985ee 0%,#4754e9 100%);
+	color:#fff;
+	text-align:center;
+	line-height:80rpx;
+	border-radius:50rpx;
+	font-size:32rpx;
+}

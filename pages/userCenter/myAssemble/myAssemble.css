@@ -1,0 +1,248 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+	padding-bottom: calc(100rpx + (constant(safe-area-inset-bottom) / 1)); /* tabBar底部安全距离, 兼容 iOS<11.2*/
+	padding-bottom: calc(100rpx + (env(safe-area-inset-bottom) / 1)); /* 兼容 iOS>=11.2 */
+}
+/* 顶部区域 */
+.wrap .top-area{
+	height:90rpx;
+	line-height: 90rpx;
+	padding:0px 30rpx;
+	background:#fff;
+	border-top:1rpx solid #EEEEEE;
+	border-bottom:1rpx solid #EEEEEE;
+}
+.top-area .top-info{
+	display:flex;
+	flex-direction: row;
+	font-size:30rpx;
+}
+.top-info .top-list{
+	align-self: center;
+	width: 33.3%;
+	color:#999;
+	text-align: center;
+}
+.top-info .top-list-one{
+	text-align: left;
+	padding-left: 20rpx;
+}
+.top-info .top-list-three{
+	text-align: right;
+	padding-right: 20rpx;
+}
+.top-info .cur{
+	color:#333333;
+	font-weight: bold;
+}
+.top-area .record-btn{
+	width:150rpx;
+	height:55rpx;
+	border:1rpx solid #C2D5F8;
+	color:#4984ED;
+	text-align:center;
+	line-height:53rpx;
+	font-size:26rpx;
+	border-radius:55rpx;
+}
+/* 订单区域 */
+.wrap .order-area{
+	width:100%;
+}
+/* 订单 */
+.order-area .order-list{
+	background:#fff;
+	margin-bottom:20rpx;
+	padding:0px 30rpx;
+}
+.order-list .order-top{
+	padding:30rpx 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:25rpx;
+}
+.order-top .order-num{
+	color:#666666;
+	font-size:26rpx;
+}
+.order-top .order-state{
+	color:#5478dd;
+	font-size:26rpx;
+}
+.order-top .order-state-success{
+	color: #f2793e;
+}
+
+.order-list .order-mid{
+	padding:20rpx;
+	background:#F7F9FB;
+	border-radius:6rpx;
+}
+.order-mid .good-list{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:20rpx;
+}
+.good-list .good-img{
+	width: 25%;
+	height: auto;
+}
+.good-list .good-img image{
+	width: 100%;
+	height: 100%;
+	display:block;
+	border-radius:8rpx;
+	border:1rpx solid #EEEEEE;
+}
+.good-list .order-good{
+	width: 71%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
+.order-good .good-top{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+.good-top .good-name{
+	width:75%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-size:28rpx;
+}
+.good-top .good-count{
+	width:25%;
+	text-align:right;
+	font-size:28rpx;
+	color:#444;
+}
+.order-good .good-mid{
+	width:100%;
+	color: #1A1A1A;
+	font-size: 26rpx;
+}
+.order-good .good-bot{
+	width:100%;
+	font-size: 26rpx;
+	color: #1A1A1A;
+}
+.order-good .good-bot .good-bot-have{
+	color: #666666;
+}
+.order-good .good-bot .good-bot-need{
+	text-align: right;
+}
+.good-mid .desc{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#999;
+	font-size:25rpx;
+}
+.good-mid .person{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#999;
+	font-size:25rpx;
+}
+.order-list .order-bot{
+	width:100%;
+	padding:30rpx 0rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.order-bot .order-desc{
+	display:flex;
+	align-items:center;
+}
+.order-desc .head-img{
+	display:block;
+	width:60rpx;
+	height:60rpx;
+	border-radius:50%;
+	margin-right:20rpx;
+}
+.order-desc .icon-gengduo-a{
+	font-size:28rpx;
+	color:#999;
+}
+.order-bot .state{
+	color:#999;
+}
+.order-bot .btn-area{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.btn-area .btn-list{
+	width:150rpx;
+	height:55rpx;
+	line-height: 55rpx;
+	border-radius:40rpx;
+	background: linear-gradient(to right, #4987ee 0%,#4753e8 100%);
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+}
+/* 底部栏 */
+.bottom-area{
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	z-index:3;
+	background:#FFFFFF;
+	border-top:1rpx solid #EEEEEE;
+	padding:15rpx 0rpx;
+	height: 100rpx;
+	padding-bottom: calc(10rpx + (constant(safe-area-inset-bottom) / 1)); /* tabBar原高度+安全距离, 兼容 iOS<11.2 */
+	padding-bottom: calc(10rpx + (env(safe-area-inset-bottom) / 1) ); /* 兼容 iOS>=11.2 */
+	
+}
+.bottom-area .bottom-area-content{
+	padding:0rpx 30rpx;
+}
+.bottom-area .bottom-area-item{
+	width: 33.3%;
+	text-align: center;
+}
+.bottom-area .bottom-area-item-one{
+	width: 60%;
+	text-align: center;
+}
+.bottom-area .bottom-area-item-three{
+	width: 60%;
+	padding-left: 40%;
+	text-align: center;
+}
+.bottom-area .bottom-area-item .bottom-area-item-icon{
+	color: #999999;
+	font-size: 45rpx;
+}
+.bottom-area .bottom-area-item .bottom-area-item-name{
+	color: #000000;
+	font-size: 20rpx;
+}
+.bottom-area .cur .bottom-area-item-icon,
+.bottom-area .cur .bottom-area-item-name{
+	color: #3056d1;
+}

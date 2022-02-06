@@ -1,0 +1,323 @@
+page{
+	font-size: 28rpx;
+	background: #FFFFFF;
+	padding-bottom: 120rpx;
+}
+swiper {
+  background: #FFF;
+}
+swiper image {
+    width: 100%;
+}
+.slide-area{
+	position: relative;
+}
+.time-area{
+	width:450rpx;
+	height:70rpx;
+	position:absolute;
+	right:0;
+	bottom:0;
+	background: #FE9F2B;
+	border-top-left-radius: 40rpx;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
+.time-area .iconfont{
+	font-size:28rpx;
+	padding-right:10rpx;
+}
+.time-area .time{
+	font-size:24rpx;
+}
+.icon-list{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 28rpx;
+	height: 45px;
+	justify-content: center;
+}
+.icon-list .iconfont{
+	font-size: 40rpx;
+}
+/* 详情 */
+.goods-detail{
+	padding: 0 30rpx 30rpx;
+}
+.goods-detail .goods-name{
+	padding-bottom: 30rpx;
+	line-height: 40rpx;
+	color: rgba(76, 81, 84, 100);
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.select{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+.select-title{
+	color: rgba(76, 81, 84, 100);
+	font-size: 28rpx;
+}
+.select-content{
+	color: rgba(168, 178, 183, 100);
+	font-size: 28rpx;
+}
+.select .iconfont{
+	color: #7E888C;
+}
+.commitment{
+	display: flex;
+	flex-wrap: wrap;
+}
+.commitment .commitment-item{
+	margin-right: 20rpx;
+	color: rgba(168, 178, 183, 100);
+	font-size: 24rpx;
+	line-height: 20px;
+	display: flex;
+}
+.goods-detail .price-area{
+	line-height: 50px;
+}
+.goods-detail .price-area .left-area .price{
+	color: rgba(87, 208, 217, 100);
+	font-size: 56rpx;
+	font-weight: bold;
+	margin-right: 15rpx;
+}
+.goods-detail .price-area .left-area .min{
+	padding: 4rpx 20rpx;
+	color: #FA512F;
+	background-color: #FEF1E1;
+	border-radius: 10rpx;
+}
+.goods-detail .price-area .right-area{
+	color: #999;
+	font-size: 26rpx;
+}
+.goods-detail .price-area .right-area .iconfont{
+	font-size: 32rpx;
+	color: #999;
+	margin-right: 10rpx;
+}
+.sale{
+	color: rgba(168, 178, 183, 100);
+	font-size: 24rpx;
+}
+.detail-area{
+	padding: 0 30rpx;
+}
+.detail-area .detail-title{
+	font-size: 32rpx;
+	padding: 30rpx 0;
+	justify-content: center;
+}
+.detail-area .detail-title .title-line{
+	height: 1rpx;
+	width: 200rpx;
+	background: #999999;
+	border-radius: 10rpx;
+	margin-right: 16rpx;
+	align-self: center;
+}
+.detail-area .detail-title .detail-inner-title{
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+	font-weight: 600;
+	margin: 0 10px;
+}
+.submit-area{
+	padding: 20rpx 40rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 -2px 0 rgba(200,200,200,0.2);
+}
+.submit-area.property{
+	position: relative;
+}
+.submit-area .submit{
+	font-size: 32rpx;
+	height: 90rpx;
+	border-radius: 100rpx;
+	border: 1px solid rgba(187, 187, 187, 100);
+	width: 35%;
+	justify-content: center;
+	align-items: center;
+}
+.submit-area .confirm{
+	background: #57D0D9;
+	font-size: 32rpx;
+	color: #FFF;
+	height: 90rpx;
+	border-radius: 100rpx;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+.submit-area .submit .iconfont{
+	font-size: 34rpx;
+	margin-right: 20rpx;
+}
+.unit{
+	color: rgba(87, 208, 217, 100);
+	font-size: 32rpx;
+}
+.nav{
+	height: 30rpx;
+	background-color: #F5F6F8;
+}
+/* 多规格弹层 */
+.property-opt-wrap {
+  position: fixed;
+  margin:auto;
+  top:  0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(92,92,92,0.7);
+  display: flex;
+  flex-direction: column;
+}
+.property-opt-wrap .other-wrap {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  overflow: visible;
+}
+.property-opt-wrap .property-detail {
+  background: #ffffff;
+  overflow: visible;
+  min-height: 200rpx;
+  box-sizing: border-box;
+}
+.property-opt-wrap .property-detail .property-top {
+  position: relative;
+  padding: 20rpx 20rpx 20rpx 240rpx;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.property-opt-wrap .property-top .goods-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 12rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 20rpx;
+  z-index: 100;
+}
+
+.property-opt-wrap .property-top .price-wrap {
+  font-size: 36rpx;
+  color: #FD5843;
+  justify-content: space-between;
+  align-items: center;
+}
+.property-opt-wrap .property-top .off-icon {
+  width: 38rpx;
+  height: 38rpx;
+  color:#D6D6D6;
+  font-size:38rpx;
+}
+.property-opt-wrap .property-top .top-item {
+  color: #999999;
+  font-size: 26rpx;
+}
+.property-opt-wrap .property-top .top-item text {
+  color: #333333;
+}
+.property-opt-wrap .property-unit {
+  padding: 0rpx 20rpx;
+  font-size:26rpx;
+  border-top: 2rpx solid #EEE;
+  /* border-bottom: 2rpx solid #EEE; */
+  /* margin: 80rpx 0 30rpx; */
+}
+.property-opt-wrap .property-unit .unit-name {
+  color: #333333;
+  padding:20rpx 0;
+  display: block;
+
+}
+.property-opt-wrap .property-unit .unit-cont {
+  flex-wrap: wrap;
+}
+.property-opt-wrap .property-unit .cont-item {
+  margin-right: 20rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+  background: #F8F8F8;
+  color: #666;
+  border: 2rpx solid #EBEBEB;
+  margin-bottom: 20rpx;
+}
+.property-opt-wrap .property-unit .cont-item.attr_value_active {
+  background: #F79B51;
+  color: #fff;
+  border: 2rpx solid #F79B51;
+}
+.property-opt-wrap .property-unit .cont-item.cur1 {
+  background: #FD5843;
+  color: #ffffff;
+}
+.property-opt-wrap .property-unit .cont-item.cur2 {
+  background: #FD5843;
+  color: #ffffff;
+}
+.property-opt-wrap .property-unit .cont-item.cur3 {
+  background: #FD5843;
+  color: #ffffff;
+}
+.property-opt-wrap .property-unit .cont-item.cur4 {
+  background: #FD5843;
+  color: #ffffff;
+}
+.property-opt-wrap .count-box .unit-cont {
+  border: 2rpx solid #DBDBDB;
+  border-radius: 10rpx;
+  align-items: center;
+  font-size: 32rpx;
+  overflow: hidden;
+  display: inline-flex;
+}
+.property-opt-wrap .property-unit .opt-btn {
+  background: #F2F2F2;
+  padding: 10rpx 15rpx;
+}
+.property-opt-wrap .property-unit .count {
+  padding: 10rpx 15rpx;
+  max-width: 70rpx;
+  text-align: center;
+}
+.property-opt-wrap .property-unit .cont-item.attr_value_disabled {
+  color: #cccccc;
+}
+.operator-area{
+	padding: 20rpx 40rpx;
+	background-color: #FFF;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: center;
+}
+.operator-area .submit{
+	border-radius: 16px;
+	font-size: 32rpx;
+	color: #FFF;
+	height: 90rpx;
+	width: 48%;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+}
+.operator-area .confirm{
+	background-color: rgba(87, 208, 217, 100);
+}

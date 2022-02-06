@@ -1,0 +1,48 @@
+page{
+	background: #ffffff;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #ffffff;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 2;
+	height:auto;
+}
+/* 推广海报 */
+.promation_img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+/* 立即分享 */
+.btn-area{
+	width:100%;
+	position:absolute;
+	top:87%;
+	left:0px;
+	z-index: 2;
+}
+.share{
+	width:75%;
+	margin: auto;
+	height:85rpx;
+	background:#328EFF;
+	text-align:center;
+	line-height:85rpx;
+	border-radius:85rpx;
+	color:#fff;
+}
+.save{
+	margin-top: 0rpx;
+	background:#ff9c5c;
+}
+.share-button{
+	font-size: 14px;
+}

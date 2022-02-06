@@ -1,0 +1,74 @@
+page{
+	background: #f3f6f9;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #f3f6f9;
+}
+/* 评价列表 */
+.wrap .comment-area{
+	background:#fff;
+	padding:0px 25rpx;
+}
+.comment-area .comment-list{
+	width:100%;
+	padding:25rpx 0px;
+	border-bottom:1rpx solid #e8e8e8;
+}
+.comment-area .comment-list:last-child{
+	border-bottom:0rpx;
+}
+.comment-list .comment-list-top{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.comment-list-top .user-info{
+	display:flex;
+	align-items:center;
+}
+.user-info .head-img{
+	display:block;
+	width:50rpx;
+	height:50rpx;
+	border-radius:50%;
+}
+.user-info .nick_name{
+	padding-left:25rpx;
+	font-size:26rpx;
+	font-weight: bold;
+}
+.comment-list-top .score-area{
+	display:flex;
+	align-items:center;
+}
+.score-area .iconfont{
+	margin-left:12rpx;
+	color:#ccc;
+	font-size:30rpx;
+}
+.score-area .selected{
+	color:#ffd800;
+	font-size:30rpx;
+}
+.comment-list .comment-list-mid{
+	width:100%;
+	padding-top:15rpx;
+	font-size:26rpx;
+}
+.comment-list .comment-list-bot{
+	width:100%;
+	padding-top:15rpx;
+	font-size:26rpx;
+	color:#999999;
+}
+.comment-list .comment-list-bot .comment-list-bot-specs{
+	margin-left: 10rpx;
+	font-size:22rpx;
+}

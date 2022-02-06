@@ -1,0 +1,67 @@
+page{
+	background: #FFFFFF;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #FFFFFF;
+	padding-bottom: 30rpx;
+}
+/* 用户信息 */
+.wrap .main-area{
+	width:100%;
+	background:#FFFFFF;
+	margin-bottom:20rpx;
+}
+.main-area .input-area{
+	color:#2C4462;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30rpx 45rpx;
+}
+.input-area .input-list{
+	flex:1;
+	padding-left:30rpx;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.input-list .head-img{
+	width:80rpx;
+	height:80rpx;
+	border-radius:50%;
+	display:block;
+}
+.input-list .inp{
+	flex:1;
+	height:55rpx;
+	border:0px;
+	outline:none;
+	color:#2C4462;
+	text-align:right;
+	line-height:55rpx;
+}
+.input-list .iconfont{
+	color:#797979;
+	font-size:26rpx;
+	padding-left:20rpx;
+}
+.main-area .btn-area{
+	display:flex;
+	justify-content:center;
+	margin-top: 80rpx;
+}
+.btn-area .submit{
+	width:80%;
+	height:80rpx;
+	border-radius:40rpx;
+	background: linear-gradient(to right, #4985ee 0%,#4754e9 100%);
+	color:#FFFFFF;
+	text-align:center;
+	line-height:80rpx;
+}

@@ -1,0 +1,94 @@
+page{
+	background: #FFFFFF;
+	font-family: '微软雅黑';
+	font-size: 28rpx;
+	color: #333333;
+}
+/* 主体容器 */
+.wrap{
+	width: 100%;
+	padding: 0;
+	background: #FFFFFF;
+	padding-bottom: 0rpx;
+}
+/* 登录区域 */
+.wrap .main-area{
+	width:100%;
+}
+.main-area .top-area{
+	width:100%;
+	position:relative;
+}
+.top-area .top-img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.top-area .top-info{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.top-info .title-one{
+	color:#fff;
+	font-size:40rpx;
+	font-weight:bold;
+	padding-bottom:20rpx;
+}
+.top-info .title-two{
+	color:#fff;
+	font-size:38rpx;
+}
+/* 账号密码 */
+.main-area .login-area{
+	padding:100rpx 60rpx 0px 60rpx;
+}
+.login-area .input-area{
+	height:90rpx;
+	background:#F8FAFC;
+	display:flex;
+	align-items:center;
+	padding:0px 30rpx;
+	margin-bottom:40rpx;
+}
+.input-area .iconfont{
+	font-size:30rpx;
+	color:#0079FF;
+}
+.input-area .inp{
+	flex:1;
+	height:55rpx;
+	padding-left:30rpx;
+	border:0px;
+	outline:none;
+}
+/* 提交 */
+.main-area .btn-area{
+	padding:140rpx 60rpx 140rpx 60rpx;
+}
+.btn-area .submit{
+	width:100%;
+	height:80rpx;
+	background:linear-gradient(to right,#5BB5FB , #48A5F9,#2889F5,#1B7DF4);
+	border-radius:50rpx;
+	color:#fff;
+	text-align:center;
+	line-height:80rpx;
+	font-size:30rpx;
+}
+.main-area .copy-right{
+	/* position:fixed;
+	bottom:80rpx;
+	left:0px; */
+	width:100%;
+	color:#999;
+	font-size:26rpx;
+	text-align:center;
+	margin-bottom:50rpx;
+}

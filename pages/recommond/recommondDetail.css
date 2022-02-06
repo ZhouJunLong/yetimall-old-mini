@@ -1,0 +1,92 @@
+.wrap{
+	width: 100%;
+}
+.slide-area{
+	width: 100%;
+}
+.slide-area swiper{
+	height: 280px;
+}
+.slide-area swiper-item image{
+	width: 100%;
+}
+.bottom-area{
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	margin-top: 30rpx;
+}
+.options{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	color: #7E888C;
+}
+.forward,.points{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: rgba(126, 136, 140, 100);
+	font-size: 20rpx;
+	font-weight: bold;
+}
+.forward .iconfont,.points .iconfont{
+	font-size: 36rpx;
+}
+.title{
+	color: rgba(76, 81, 84, 100);
+	font-size: 32rpx;
+	font-weight: bold;
+	margin-top: 32rpx;
+	margin-bottom: 40rpx;
+}
+.second-title{
+	color: rgba(76, 81, 84, 100);
+	font-size: 28rpx;
+	display: flex;
+	line-height: 32rpx;
+}
+.second-title image{
+	width: 32rpx;
+	height: 32rpx;
+}
+.text-brief{
+	margin-top: 20rpx;
+	margin-bottom: 40rpx;
+}
+.text-brief .brand{
+	color: rgba(76, 81, 84, 100);
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.text-brief .name{
+	color: rgba(76, 81, 84, 100);
+	font-size: 30rpx;
+}
+.context-title .iconfont{
+	font-size: 32rpx;
+	color: #FEA679;
+	margin-right: 5px;
+}
+.context-title {
+	color: rgba(76, 81, 84, 100);
+	font-size: 28rpx;
+}
+.goods{
+	display: flex;
+	justify-content: space-around;
+	width: calc(100% - 120rpx);
+	height: 50rpx;
+	margin: 30rpx;
+	padding: 30rpx;
+	border: 2px solid #F1F1F1;
+	border-radius: 3px;
+}
+.goods image{
+	width: 30%;
+	height: 100%;
+}
+.goods text{
+	width: 65%;
+	font-weight: 600;
+	color: #4F4E54;
+}

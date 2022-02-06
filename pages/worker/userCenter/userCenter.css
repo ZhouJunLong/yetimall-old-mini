@@ -1,0 +1,189 @@
+page{
+	background:#F5F7F9;
+}
+.wrap{
+	font-size:28rpx;
+	padding-bottom:125rpx;
+}
+.wrap .top-area{
+	width:100%;
+	position:relative;
+}
+.top-area .top-img{
+	width:100%;
+	height:auto;
+	display:block;
+}
+.top-area .top-info{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	padding:0px 30rpx;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.top-info .head_img{
+	display:block;
+	width:100rpx;
+	height:100rpx;
+	border-radius:50%;
+	border:5rpx solid #C8D3F9;
+	margin-top:70rpx;
+}
+.top-info .nick_name{
+	font-size:30rpx;
+	color:#fff;
+	padding-top:25rpx;
+}
+.user .id_num{
+	font-size:25rpx;
+	color:#fff;
+}
+.top-info .peron-info,.no-user .peron-info{
+	width:170rpx;
+	height:55rpx;
+	background:#DDEBFC;
+	border-radius:30rpx;
+	text-align:center;
+	line-height:55rpx;
+	color:#0079FF;
+	font-size:26rpx;
+}
+.top-info .top-bot{
+	width:100%;
+	padding-top:40rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.top-bot .top-bot-list{
+	color:#fff;
+	font-size:25rpx;
+}
+.top-bot-list .bot-val{
+	padding-top:10rpx;
+	font-size:35rpx;
+}
+.top-info .count-area{
+	width:100%;
+	margin-top:30rpx;
+	display:flex;
+	align-items:center;
+}
+.count-area .count-list{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100rpx;
+	position:relative;
+}
+.count-list .count-num{
+	font-size:40rpx;
+	color:#fff;
+	padding-bottom:5rpx;
+}
+.count-list .count-tip{
+	font-size:26rpx;
+	color:#fff;
+}
+.count-area .count-list .bor{
+	position:absolute;
+	right:0px;
+	top:15rpx;
+	width:1rpx;
+	height:70rpx;
+	background:#6D8AEF;
+}
+/* 主体 */
+.wrap .main-area{
+	width:100%;
+	overflow:visible;
+	/* padding:30rpx; */
+	background:#fff;
+}
+
+/* 购买的服务 */
+.main-area .main-six{
+	width:100%;
+	padding:30rpx;
+	box-shadow:0px 0px 15rpx 5rpx #efefef;
+	border-radius:15rpx;
+}
+.main-six .six-top{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-bottom:30rpx;
+}
+.six-top .top-left{
+	display:flex;
+	align-items:center;
+}
+.top-left .iconfont{
+	color:#0079FF;
+	font-size:30rpx;
+}
+.six-top .icon-you{
+	font-size:28rpx;
+	color:#999;
+}
+.main-six .six-bot{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.main-six .six-left{
+	width:48%;
+	position:relative;
+}
+.main-six .six-right{
+	width:100%;
+	position:relative;
+}
+.main-six .six-img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+.main-six .six-info{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	padding:30rpx 0px 0px 30rpx;
+}
+.six-info .six-name{
+	font-size:28rpx;
+	color:#fff;
+}
+.six-info .six-desc{
+	font-size:26rpx;
+	color:#fff;
+	padding-top:10rpx;
+}
+
+/* 菜单 */
+.menu-area{
+	width:100%;
+	margin-top:20rpx;
+	background:#fff;
+}
+.menu-area .menu-list{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:30rpx;
+}
+.menu-list .iconfont{
+	color:#999;
+	font-size:26rpx;
+}

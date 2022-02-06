@@ -1,0 +1,354 @@
+page{
+	background:#F3F6F9;
+}
+.wrap{
+	font-size:28rpx;
+	padding-bottom:110rpx;
+}
+.wrap .tab-area{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background:#fff;
+	padding:0px 30rpx;
+	border-top:1rpx solid #eee;
+}
+.tab-area .tab-list{
+	padding:30rpx 0rpx;
+	color:#888;
+	font-size:25rpx;
+	border-bottom:8rpx solid #fff;
+}
+.tab-area .tab-list.cur{
+	color:#000;
+	font-weight:bold;
+	border-bottom:8rpx solid #0079FF;
+}
+/* 订单 */
+.wrap .order-area{
+	width:100%;
+	padding:30rpx;
+}
+.order-area .order-list{
+	width:100%;
+	background:#fff;
+	margin-bottom:20rpx;
+	padding:30rpx 30rpx 0 30rpx;
+	border-radius:6rpx;
+}
+.order-list .order-top{
+	padding:30rpx 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:25rpx;
+}
+.order-top .order-num{
+	color:#444;
+	font-size:26rpx;
+}
+.order-top .state{
+	color:#EF692E;
+}
+.order-top .state2{
+	color:#999;
+}
+.order-list .order-mid{
+	width:100%;
+	padding:20rpx;
+	background:#F7F9FB;
+	border-radius:6rpx;
+}
+.order-mid .good-list{
+	width:100%;
+	display:flex;
+	align-items:center;
+	margin-bottom:20rpx;
+}
+.order-mid .good-list:last-child{
+	margin-bottom:0rpx;
+}
+.good-list .good-img{
+	display:block;
+	width:160rpx;
+	height:160rpx;
+	border-radius:8rpx;
+	border:1rpx solid #EEEEEE;
+}
+.good-list .order-good{
+	width:calc(100% - 160rpx);
+	height:150rpx;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding-left:35rpx;
+}
+.order-good .good-top{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+.good-top .good-name{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	font-size:28rpx;
+}
+.good-top .good-count{
+	width:25%;
+	text-align:right;
+	font-size:28rpx;
+	color:#444;
+}
+.order-good .good-mid{
+	width:100%;
+}
+.good-mid .desc{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#999;
+	font-size:25rpx;
+}
+.good-mid .person{
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#999;
+	font-size:25rpx;
+}
+.order-good .good-bot{
+	width:100%;
+	font-size:28rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.order-list .address-area{
+	width:100%;
+	padding:30rpx 0px;
+	border-bottom:1rpx solid #f2f2f2;
+}
+.address-area .address-top{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+.address-top .phone{
+	padding-left:50rpx;
+}
+.address-area .address-bot{
+	width:100%;
+	color:#999;
+	padding-top:15rpx;
+}
+.order-list .order-bot{
+	width:100%;
+	padding:35rpx 0rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.order-bot .order-desc{
+	display:flex;
+	align-items:center;
+}
+.order-desc .unit{
+	padding-left:20rpx;
+}
+.order-desc .total_price{
+	color:#FE5043;
+}
+.order-bot .btn-area{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.btn-area .btn-list{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	background:#0079FF;
+}
+.btn-area .refundOrder{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#888;
+	border:1rpx solid #d2d2d2;
+}
+.btn-area .updateRecord{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	background:#2AB8C9;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:20rpx;
+	color:#fff;
+}
+.btn-area .updateRecordTwo{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	background:#F72F50;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+}
+.btn-area .addComment{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	background:#FEB71F;
+}
+.btn-area .serverReport{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	background:#0079FF;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:20rpx;
+	color:#fff;
+}
+.btn-area .deleteOrder{
+	width:150rpx;
+	height:50rpx;
+	border-radius:40rpx;
+	font-size:25rpx;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#888;
+	border:1rpx solid #d2d2d2;
+}
+
+
+/* 预约时间区域 */
+.wrap .modal-area{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+	display:flex;
+	align-items:flex-end;
+	z-index:999;
+}
+.modal-area .modal-list{
+	width:100%;
+	background:#fff;
+}
+.modal-list .modal-top{
+	width:100%;
+	padding:30rpx;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-bottom: 1rpx solid #f2f2f2;
+}
+.modal-top .title{
+	color:#444;
+}
+.modal-top .confirm{
+	color:#0079FF;
+}
+.modal-top .cancel{
+	color:#999;
+}
+	
+.modal-list .modal-cont{
+	width:100%;
+	display:flex;
+	padding:20rpx 30rpx 40rpx 30rpx;
+}
+.modal-cont .modal-date{
+	width:50%;
+	height:300rpx;
+	background:#F9F9F9;
+}
+.modal-date .day-list{
+	width:100%;
+	height:70rpx;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.modal-date .day-list.cur{
+	background:#fff;
+	color:#0079FF;
+}
+.modal-cont .modal-time{
+	width:50%;
+	height:300rpx;
+}
+.modal-time .modal-time-info{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.modal-time-info .modal-time-list{
+	width:75%;
+	height:120rpx;
+	border:1rpx solid #d2d2d2;
+	border-radius:8rpx;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:25rpx;
+	position:relative;
+}
+.modal-time-info .modal-time-list:last-child{
+	margin-bottom:0px;
+}
+.modal-time-info .modal-time-list.cur2{
+	border:1rpx solid #0079FF;
+	color:#0079FF;
+}
+.modal-time-list .label{
+	position:absolute;
+	right:0px;
+	top:0px;
+	font-size:20rpx;
+	padding:5rpx 10rpx;
+	background:#d2d2d2;
+	color:#000;
+	border-top-right-radius:8rpx;
+	border-bottom-left-radius:8rpx;
+}
+.modal-time-list.cur2 .label{
+	background:#0079FF;
+	color:#fff;
+}
+.finish{
+	background: #b2b2b2 !important;
+}

@@ -126,7 +126,8 @@
 			"path": "pages/userCenter/delivery/delivery",
 			"style": {
 				"navigationBarTitleText": "物流轨迹",
-				"navigationBarTextStyle":"#ffffff"
+				"navigationBarTextStyle":"#ffffff",
+				"backgroundColor":"#ffffff"
 			}
 		}
 	],

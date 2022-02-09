@@ -39,7 +39,6 @@ export default {
     }
   },
   onLoad(query) {
-    console.log('---query---', query)
     this.oid = query.oid
     this.getOrderDetail()
   },
@@ -53,7 +52,6 @@ export default {
         (error, result) => {
           if (result.errorCode === 0) {
             let res = result.data
-            console.log('---res---', res)
             this.list = res.trajectory || []
             this.delivery_num = res.delivery_num
             this.delivery_tel = res.delivery_tel

@@ -52,8 +52,16 @@
           <view class="good_item_right">
             <view class="good_item_title">{{ item.goods_name }}</view>
             <view class="good_item_des">
-              <view class="good_item_des_spec">{{ item.property && item.property[0].value || '默认' }}</view>
-              <view class="good_item_num">数量：x{{ item.count }}</view>
+              <!-- <view class="good_item_des_spec">{{ item.property && item.property[0].value || '默认' }}</view> -->
+              <!-- <view class="good_item_des_spec"> -->
+              <view class="good_item_des_spec"
+                    v-if="item.property && item.property.length > 0">
+                <text v-for="(subItem ,index) in item.property"
+                      :key="index">{{subItem.name+':'+subItem.value+' '}}</text>
+              </view>
+              <text class="good_item_num">数量：x{{ item.count }}</text>
+              <!-- </view> -->
+              <!-- <view class="good_item_num">数量：x{{ item.count }}</view> -->
             </view>
             <view class="good_item_price">
               <text class="good_item_price_type">¥</text>
@@ -607,8 +615,12 @@ page {
             font-size: 22rpx;
             color: #252525;
             line-height: 32rpx;
+            flex-wrap: wrap;
             .good_item_des_spec {
               margin-right: 10rpx;
+            }
+            .good_item_num {
+              min-width: 100rpx;
             }
           }
           .good_item_price {

@@ -183,14 +183,18 @@ var GetList = function (that, orbottom) {
         var state = parseInt(obj.state)
         var goods_list = JSON.parse(obj.goods_list)
         // console.log(dataList[i]);
-        if (goods_list[0]['property']) {
-          var property = JSON.parse(goods_list[0]['property'])
-          var property_text = ''
-          for (var k = 0; k < property.length; k++) {
-            property_text +=
-              property[k]['name'] + ':' + property[k]['value'] + ' '
+        for (var j = 0; j < goods_list.length; j++) {
+          if (goods_list[j]['gid'] != null) {
+            if (goods_list[j]['property']) {
+              var property = JSON.parse(goods_list[j]['property'])
+              var property_text = ''
+              for (var k = 0; k < property.length; k++) {
+                property_text +=
+                  property[k]['name'] + ':' + property[k]['value'] + ' '
+              }
+              goods_list[j]['property'] = property_text
+            }
           }
-          goods_list[0]['property'] = property_text
         }
         obj.goods_list = goods_list
         if (that.language == 0) {

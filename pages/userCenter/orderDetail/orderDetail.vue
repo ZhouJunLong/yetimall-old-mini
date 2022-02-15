@@ -249,12 +249,20 @@ export default {
   methods: {
     showPop() {
       this.showPopup = true
+      this.remark = this.remark_text
     },
     closePopup() {
       this.showPopup = false
     },
     // 保存备注
     saveRemark() {
+      if (this.remark) {
+        uni.showToast({
+          title: '内容不能为空',
+          icon: 'none',
+          duration: 2000,
+        })
+      }
       const params = {
         user_id: this.userInfo.id,
         order_id: this.oid,

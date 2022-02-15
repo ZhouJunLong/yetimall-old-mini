@@ -117,9 +117,12 @@
         </view>
       </view>
     </view>
-    <view class="detail_remark"
-          v-if="remark_text">
-      <view class="remark_title">订单备注</view>
+    <view class="detail_remark">
+      <view class="remark_title">
+        <view class="title">订单备注</view>
+        <view class="edit"
+              @click="showPop">修改备注</view>
+      </view>
       <view class="remark_text">{{ remark_text }}</view>
     </view>
     <!-- 底部按钮 -->
@@ -138,6 +141,25 @@
             @click="payOrder">立即付款</view>
       <!-- <view class="cancel_pri detail_btn" v-if="orderStateObj.showComment" @click="addComment">评价</view> -->
     </view>
+    <view class="popup"
+          v-if="showPopup">
+      <view class="mode"></view>
+      <view class="content">
+        <view class="title-container">
+          <view class="title">请填写备注</view>
+          <image class="close"
+                 @click="closePopup"
+                 src='../../../static/images/close.png'></image>
+        </view>
+        <textarea class="remark_input"
+                  placeholder="请填写备注"
+                  v-model="remark"
+                  type="text"
+                  maxlength="100"></textarea>
+        <view class="btn"
+              @click="saveRemark">确定</view>
+      </view>
+    </view>
   </view>
 </template>
 <script>
@@ -153,10 +175,14 @@ export default {
       oid: '',
       orderDetail: null,
       showDetail: false,
+      showPopup: false,
+      remark: '',
+      userInfo: {},
     }
   },
   onLoad(options) {
     this.oid = options.oid || ''
+    this.userInfo = uni.getStorageSync('userInfo')
     this.getOrderDetail()
   },
   computed: {
@@ -221,6 +247,45 @@ export default {
     },
   },
   methods: {
+    showPop() {
+      this.showPopup = true
+    },
+    closePopup() {
+      this.showPopup = false
+    },
+    // 保存备注
+    saveRemark() {
+      const params = {
+        user_id: this.userInfo.id,
+        order_id: this.oid,
+        remarks_user: this.remark,
+      }
+      tools.httpClient(
+        'home/WxStore/addOrderRemarks',
+        params,
+        (error, result) => {
+          this.closePopup()
+          if (result.errorCode === 0) {
+            this.remark = ''
+            let res = result.data
+            if (res) {
+              uni.showToast({
+                title: '修改备注成功',
+                icon: 'none',
+                duration: 2000,
+              })
+              this.getOrderDetail()
+            }
+          } else {
+            uni.showToast({
+              title: result.errorInfo || '修改备注失败，请稍后再试',
+              icon: 'none',
+              duration: 3000,
+            })
+          }
+        }
+      )
+    },
     gotoDelivery() {
       uni.navigateTo({
         url: '/pages/userCenter/delivery/delivery?oid=' + this.oid,
@@ -477,7 +542,7 @@ page {
   background: #f3f6f9;
   box-sizing: border-box;
   font-family: PingFang-SC-Bold, PingFang-SC;
-  padding-bottom: 106rpx;
+  padding-bottom: 150rpx;
   .detail_header {
     background: #2c2c38;
     padding: 53rpx 17rpx 28rpx 17rpx;
@@ -713,6 +778,10 @@ page {
     .remark_title {
       font-size: 24rpx;
       color: #252525;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
     }
     .remark_text {
       font-size: 22rpx;
@@ -748,6 +817,64 @@ page {
       line-height: 70rpx;
       border-radius: 5rpx 5rpx 5rpx 5rpx;
       margin-left: 21rpx;
+    }
+  }
+}
+.popup {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  .mode {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .content {
+    background-color: #fff;
+    z-index: 1001;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 30rpx;
+    padding-bottom: 80rpx;
+    border-top-left-radius: 10rpx;
+    border-top-right-radius: 10rpx;
+    .title-container {
+      height: 120rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        font-family: pingFangSC-Medium;
+        font-weight: bold;
+        font-size: 36rpx;
+        color: #252525;
+        line-height: 40rpx;
+      }
+      .close {
+        width: 32rpx;
+        height: 32rpx;
+      }
+    }
+    .remark_input {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: #f5f5f5;
+      height: 200rpx;
+      margin-top: 10rpx;
+      padding: 10rpx;
+    }
+    .btn {
+      background-color: #00b596;
+      text-align: center;
+      line-height: 96rpx;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 100rpx;
     }
   }
 }

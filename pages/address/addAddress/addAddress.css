@@ -23,6 +23,19 @@ page{
 	align-items: center;
 	border-bottom: 2rpx solid #BBBBBB;
 }
+.attr-area-tips{
+	display: flex;
+	height: 120rpx;	
+	align-items: center;
+}
+.tips{
+	color: red;
+}
+.attr-tips{
+	display: block;
+	height: 160rpx;
+	
+}
 /* .attr-area:last-child {
 	border: none;
 } */

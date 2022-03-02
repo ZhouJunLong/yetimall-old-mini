@@ -27,7 +27,7 @@ var tools = {
 	 * 判断微信授权
 	 */
 	isWeixinLogin() {
-		var userInfo = uni.getStorageSync('userInfo');
+		var userInfo = uni.getStorageSync('f');
 		if (userInfo) {
 			return true;
 		}else{

@@ -14,15 +14,17 @@
       </view>
     </view>
     <view class="wrap">
-      <view v-for="(item,index) in list"
+      <view class="item"
+            v-for="(item,index) in list"
             :key='index'>
-        <view class="vertical-circle"></view>
-        <view class="vertical-text">
+        <view class="item-left">
+          <view class="item-circle"></view>
+          <view class="item-line"></view>
+        </view>
+        <view class="item-right">
           <view>{{ item.content }}</view>
           <view>{{ item.content_date }}</view>
         </view>
-        <view class="vertical-line"
-              v-if="index < list.length-1"></view>
       </view>
     </view>
   </view>
@@ -106,29 +108,44 @@ export default {
 }
 .wrap {
   margin-top: 60rpx;
-}
-.vertical-line {
-  height: 130rpx;
-  border: 0;
-  border-left: 4rpx solid;
-  margin-left: 8rpx;
-  border-image: linear-gradient(#00eba7, #08b8e6) 30 30;
-}
+  .item {
+    display: flex;
+    font-size: 28rpx;
+    color: #8b8b8b;
+    &:last-child {
+      .item-left {
+        .item-line {
+          display: none;
+        }
+      }
+    }
 
-.vertical-circle {
-  float: left;
-  width: 12rpx;
-  height: 12rpx;
-  border: 4rpx solid white;
-  background-color: #08b8e6;
-  border-radius: 50%;
-}
-.vertical-text {
-  float: left;
-  margin-top: -14rpx;
-  padding-left: 20rpx;
-  font-size: 28rpx;
-  // color: #252525;
-  color: #8b8b8b;
+    .item-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .item-circle {
+        width: 12rpx;
+        height: 12rpx;
+        border: 4rpx solid white;
+        background-color: #08b8e6;
+        border-radius: 50%;
+      }
+      .item-line {
+        flex: 1;
+        border: 0;
+        height: 100%;
+        width: 4rpx;
+        background-image: linear-gradient(#00eba7, #08b8e6);
+      }
+    }
+    .item-right {
+      margin-top: -14rpx;
+      padding-left: 20rpx;
+      padding-bottom: 40rpx;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 }
 </style>

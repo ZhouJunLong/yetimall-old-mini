@@ -3,7 +3,7 @@
         v-if="list.length > 0">
     <view class="header">
       <view class="order_num">
-        <view class="title">顺丰速运：</view>
+        <view class="title">{{ express_name }}：</view>
         <view class="num">{{ delivery_num }}</view>
         <view class="copy_btn"
               @click="copy(delivery_num)">复制</view>
@@ -38,6 +38,7 @@ export default {
       list: [],
       delivery_num: '',
       delivery_tel: '95338',
+      express_name: '顺丰速运',
     }
   },
   onLoad(query) {
@@ -56,7 +57,8 @@ export default {
             let res = result.data
             this.list = res.trajectory || []
             this.delivery_num = res.delivery_num
-            this.delivery_tel = res.delivery_tel
+            this.delivery_tel = res.delivery_tel || '95338'
+            this.express_name = res.express_name || '顺丰速运'
           } else {
             uni.showToast({
               title: result.errorInfo || '请求失败,请稍后再试',

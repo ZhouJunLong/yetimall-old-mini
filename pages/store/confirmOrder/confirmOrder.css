@@ -387,3 +387,8 @@ page{
 	margin-top: 10rpx;
 	padding:10rpx;
 }
+.good-mid{
+	width: 100%;
+    color: rgba(126, 136, 140, 100);
+    font-size: 28rpx;
+}
